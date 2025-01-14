@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "bf9bfa27-cf81-444d-9e45-65b83ba94b6b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40981523"
+	},
+	"item": [
+		{
+			"name": "Create/Post Blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"title\": \"Updated Blog Title\",\r\n    \"description\": \"Updated blog description.\",\r\n    \"category_id\": 1\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/blog_api/blog_api/blog_api_post.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blog_api",
+						"blog_api",
+						"blog_api_post.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Blog",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Web Developer\",\r\n    \"description\": \"Creates and maintains websites using modern technologies.\",\r\n    \"category_id\": 1\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/blog_api/blog_api/blog_api_update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blog_api",
+						"blog_api",
+						"blog_api_update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/blog_api/blog_api/blog_api_get.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blog_api",
+						"blog_api",
+						"blog_api_get.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Blog by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/blog_api/blog_api/blog_api_get.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"blog_api",
+						"blog_api",
+						"blog_api_get.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
